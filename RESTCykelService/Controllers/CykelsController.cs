@@ -40,7 +40,8 @@ namespace RESTCykelService.Controllers
         [HttpPost]
         public void Post([FromBody] Cykel value)
         {
-            _data.Add(value);
+            int id = _data.Max(c => c.Id);
+            value.Id = id + 1;
         }
 
         // PUT api/<CykelsController>/5
@@ -60,7 +61,7 @@ namespace RESTCykelService.Controllers
 
         // DELETE api/<CykelsController>/5
         [HttpDelete()]
-        [Route("{id")]
+        [Route("{id}")]
         public void Delete(int id)
         {
             Cykel cykel = Get(id);

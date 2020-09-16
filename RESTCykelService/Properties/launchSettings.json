@@ -20,7 +20,7 @@
     "RESTCykelService": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Cykels",
+      "launchUrl": "Cykels",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
