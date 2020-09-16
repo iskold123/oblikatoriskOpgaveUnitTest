@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oblikatoriskOpgave", "oblikatoriskOpgave\oblikatoriskOpgave.csproj", "{AB16C185-1D40-4AAE-9981-8C8E3C9C2F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oblikatoriskOpgaveTests", "oblikatoriskOpgaveTests\oblikatoriskOpgaveTests.csproj", "{2047DB66-861B-4369-A47D-4679E65019B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB16C185-1D40-4AAE-9981-8C8E3C9C2F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB16C185-1D40-4AAE-9981-8C8E3C9C2F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB16C185-1D40-4AAE-9981-8C8E3C9C2F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB16C185-1D40-4AAE-9981-8C8E3C9C2F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2047DB66-861B-4369-A47D-4679E65019B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2047DB66-861B-4369-A47D-4679E65019B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2047DB66-861B-4369-A47D-4679E65019B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2047DB66-861B-4369-A47D-4679E65019B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {726CE54F-E4FF-4E70-BF77-4B5ACEAA6FB7}
+	EndGlobalSection
+EndGlobal
