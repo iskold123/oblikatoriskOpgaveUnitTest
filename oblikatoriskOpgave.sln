@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oblikatoriskOpgave", "oblik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oblikatoriskOpgaveTests", "oblikatoriskOpgaveTests\oblikatoriskOpgaveTests.csproj", "{2047DB66-861B-4369-A47D-4679E65019B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTCykelService", "RESTCykelService\RESTCykelService.csproj", "{2D63F6D1-1159-4CB7-AE12-5B996F606756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2047DB66-861B-4369-A47D-4679E65019B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2047DB66-861B-4369-A47D-4679E65019B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2047DB66-861B-4369-A47D-4679E65019B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D63F6D1-1159-4CB7-AE12-5B996F606756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D63F6D1-1159-4CB7-AE12-5B996F606756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D63F6D1-1159-4CB7-AE12-5B996F606756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D63F6D1-1159-4CB7-AE12-5B996F606756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
