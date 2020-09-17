@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using oblikatoriskOpgave;
 
@@ -10,6 +11,7 @@ using oblikatoriskOpgave;
 namespace RESTCykelService.Controllers
 {
     [Route("api/Cykels")]
+    //[EnableCors("AllowAnyOrigin")]
     [ApiController]
     public class CykelsController : ControllerBase
     {
@@ -23,6 +25,7 @@ namespace RESTCykelService.Controllers
 
         // GET: api/<CykelsController>
         [HttpGet]
+        //[EnableCors("AllowSpecificOrigin")]
         public IEnumerable<Cykel> Get()
         {
             return _data;

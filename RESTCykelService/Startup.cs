@@ -25,6 +25,20 @@ namespace RESTCykelService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAnyOrigin",
+                    builder => builder.AllowAnyOrigin());
+
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins(""));
+
+                options.AddPolicy("AllowAnyOriginGetPost",
+                    builder => builder.AllowAnyOrigin().WithMethods("GET",
+                        "POST"));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +57,16 @@ namespace RESTCykelService
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors(
+                options =>
+                {
+                    options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().WithMethods("GET", "PUT");
+                    // allow everything from anywhere
+                });
+
+            app.UseCors("AllowAnyOrigin");
+
         }
     }
 }
