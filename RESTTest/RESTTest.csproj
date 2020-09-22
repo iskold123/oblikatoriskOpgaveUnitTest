@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\oblikatoriskOpgave\oblikatoriskOpgave.csproj" />
     <ProjectReference Include="..\RESTCykelService\RESTCykelService.csproj" />
   </ItemGroup>
 
