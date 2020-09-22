@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oblikatoriskOpgaveTests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTCykelService", "RESTCykelService\RESTCykelService.csproj", "{2D63F6D1-1159-4CB7-AE12-5B996F606756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CykelServer", "CykelServer\CykelServer.csproj", "{AFE9CDCB-48F0-4249-9484-54BC71F2536D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CykelServer", "CykelServer\CykelServer.csproj", "{AFE9CDCB-48F0-4249-9484-54BC71F2536D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTTest", "RESTTest\RESTTest.csproj", "{9E92701F-C734-4481-9D95-4BA79A296AD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AFE9CDCB-48F0-4249-9484-54BC71F2536D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE9CDCB-48F0-4249-9484-54BC71F2536D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE9CDCB-48F0-4249-9484-54BC71F2536D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E92701F-C734-4481-9D95-4BA79A296AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E92701F-C734-4481-9D95-4BA79A296AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E92701F-C734-4481-9D95-4BA79A296AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E92701F-C734-4481-9D95-4BA79A296AD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
