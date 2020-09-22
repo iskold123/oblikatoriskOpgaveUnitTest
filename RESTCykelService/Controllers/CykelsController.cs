@@ -15,7 +15,7 @@ namespace RESTCykelService.Controllers
     [ApiController]
     public class CykelsController : ControllerBase
     {
-        private static List<Cykel> _data = new List<Cykel>
+        public static List<Cykel> _data = new List<Cykel>
         {
             new Cykel(3,"Blue",85,16),
             new Cykel(4,"Red",145,3),

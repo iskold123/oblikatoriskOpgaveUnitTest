@@ -76,7 +76,7 @@ namespace oblikatoriskOpgave
 
         public override string ToString()
         {
-            return "";
+            return $"{nameof(_id)}: {_id}, {nameof(_color)}: {_color}, {nameof(_price)}: {_price}, {nameof(_gear)}: {_gear}";
         }
 
         #endregion
