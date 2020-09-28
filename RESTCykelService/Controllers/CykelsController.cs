@@ -15,6 +15,8 @@ namespace RESTCykelService.Controllers
     [ApiController]
     public class CykelsController : ControllerBase
     {
+
+        //Håbede jeg kunne undgå at oprette en liste her i controlleren og hente den direkte fra min cykel klasse.
         public static List<Cykel> _data = new List<Cykel>
         {
             new Cykel(3,"Blue",85,16),
