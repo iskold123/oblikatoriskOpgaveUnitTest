@@ -69,7 +69,7 @@ namespace CykelServer
                 str2 = sr.ReadLine();
 
                 var i = int.Parse(str2);
-                var b = cykler1.FirstOrDefault(cykler1 => cykler1.Id == i);
+                var b = JsonConvert.SerializeObject(cykler1.FirstOrDefault(cykler1 => cykler1.Id == i));
 
                 sw.WriteLine(b);
             }
