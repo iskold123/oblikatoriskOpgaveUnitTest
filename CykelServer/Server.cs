@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using oblikatoriskOpgave;
 using RESTCykelService.Controllers;
 
@@ -19,13 +20,12 @@ namespace CykelServer
             server.Start();
 
             //Concurrent, flere klienter kan kører på samme tid.
+            // Ingen ventetid for de forskellige klienter.
             while (true)
             {
                 TcpClient socket = server.AcceptTcpClient();
                 Task.Run(() =>
                 {
-
-                    // Ingen ventetid for de forskellige klienter.
                     TcpClient tempSocket = socket;
                     DoClient(tempSocket);
                 });
@@ -46,15 +46,17 @@ namespace CykelServer
             StreamWriter sw = new StreamWriter(socket.GetStream());
 
             var str = sr.ReadLine();
+            string str2;
 
             if (str == "HentAlle") 
             {
                 sw.WriteLine($"Bikes in list;");
                 Console.WriteLine($"Cykler i listen: ");
-                foreach (var cykler in cykler1) sw.WriteLine(cykler);
-                foreach (var cykler in cykler1)
+
+                foreach (var cykel in cykler1) sw.WriteLine(JsonConvert.SerializeObject(cykel));
+                foreach (var cykel in cykler1)
                 {
-                    Console.WriteLine(cykler);
+                    Console.WriteLine(cykel);
                 }
             }
             else if (str == "Hent")
@@ -64,7 +66,6 @@ namespace CykelServer
 
                 sw.Flush();
 
-                string str2;
                 str2 = sr.ReadLine();
 
                 var i = int.Parse(str2);
@@ -72,10 +73,16 @@ namespace CykelServer
 
                 sw.WriteLine(b);
             }
+            else if (str == "Gem")
+            {
+                str2 = sr.ReadLine();
+                Cykel nyCykel = JsonConvert.DeserializeObject<Cykel>(str2);
+                cykler1.Add(nyCykel);
+            }
             
             sw.Flush();
 
-            //socket.Close();
+            socket.Close();
         }
     }
 }
